@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="2.5" type="template" method="upgrade">
+	
+	<name>adorsys</name><!-- nom du template -->
+	<creationDate>xxxx-xx-xx</creationDate><!-- the date your are beginn to code -->
+	<author>votre nom</author><!-- votre nom (oops, I repeat myself) -->
+	<copyright>Copyright © xxxx exemple.com</copyright><!-- for who you are coding -->
+	<authorEmail>your.name@exemple.com</authorEmail><!-- your email address -->
+	<authorUrl>http://www.exemple.com</authorUrl><!-- your url -->
+	<version>1.0.0</version><!-- donner un numero de version pour votre template -->
+	<description><![CDATA[ 
+		<h1>Nomdutemplate</h1>
+		<p><img src="../templates/templatename/template_preview.png" /></p>
+		<h2>Positions des Modules</h2>
+		<ol>
+			<li>debug</li>
+		</ol>
+		<p>Creation de <a href="http://www.exemple.com" target="_blank">votre nom | exemple.com</a>.</p>
+	]]></description><!-- changer la description comme vous voulez -->
+	
+	<files><!-- on ne change rien -->
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>apple-touch-icon-57x57.png</filename>
+		<filename>apple-touch-icon-72x72.png</filename>
+		<filename>apple-touch-icon-114x114.png</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<languages folder="language"><!-- on ne change rien -->
+		<language tag="de-DE">de-DE.tpl_templatename.ini</language>
+		<language tag="en-GB">en-GB.tpl_templatename.ini</language>
+		<language tag="fr-FR">fr-FR.tpl_templatename.ini</language>
+	</languages>
+	
+	<positions><!-- definir les positions de vos modules ici -->
+		<position>debug</position>
+                <position>header-top</position>
+                <position>header-bottom</position>
+                <position>sidebar-left</position>
+                <position>sidebar-right</position>
+                <position>content-top</position>
+                <position>content-bottom</position>
+                <position>footer</position>
+	</positions>
+	
+	<config><!-- on ne change rien -->
+		<fields name="params">
+			<fieldset name="basic">
+			  <!-- MODERNIZR-->
+  			  <field name="modernizr" type="radio" default="1" label="TPL_TEMPLATENAME_PARAMETER_MODERNIZR_LABEL" description="TPL_TEMPLATENAME_PARAMETER_MODERNIZR_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+  				</field>
+  				<field name="TPL_TEMPLATENAME_PARAMETER_MODERNIZR_DOC" type="spacer" hr="false" />
+  				<field type="spacer" hr="true" />
+		    <!-- TWITTER BOOTSTRAP-->
+  		    <field name="bootstrap" type="radio" default="0" label="TPL_TEMPLATENAME_PARAMETER_BOOTSTRAP_LABEL" description="TPL_TEMPLATENAME_PARAMETER_BOOTSTRAP_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+  				</field>
+  				<field name="TPL_TEMPLATENAME_PARAMETER_BOOTSTRAP_DOC" type="spacer" hr="false" />
+  				<field type="spacer" hr="true" />
+				<!-- PIE-->
+  				<field name="pie" type="radio" default="1" label="TPL_TEMPLATENAME_PARAMETER_PIE_LABEL" description="TPL_TEMPLATENAME_PARAMETER_PIE_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+  				</field>
+  				<field name="TPL_TEMPLATENAME_PARAMETER_PIE_DOC" type="spacer" hr="false" />
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>
