@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'Ce site est en maintenance.<br /> Merci de revenir ultérieurement.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'CLIENT';
+	public $sitename = 'EDITH KETTEL MARKET SERVICES';
 	public $editor = 'tinymce';
 	public $captcha = '0';
 	public $list_limit = '20';
@@ -21,13 +21,13 @@ class JConfig {
 	public $secret = 'vD2lw3VUmY1MBgsr';
 	public $gzip = '0';
 	public $error_reporting = 'default';
-	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
+	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
 	public $ftp_host = '';
 	public $ftp_port = '';
 	public $ftp_user = '';
 	public $ftp_pass = '';
 	public $ftp_root = '';
-	public $ftp_enable = '';
+	public $ftp_enable = '0';
 	public $offset = 'UTC';
 	public $mailer = 'mail';
 	public $mailfrom = 'franklin.hsimo@afrotools.com';
@@ -55,6 +55,12 @@ class JConfig {
 	public $feed_limit = '10';
 	public $log_path = '/var/www/Joomla3/logs';
 	public $tmp_path = '/var/www/Joomla3/tmp';
-	public $lifetime = '15';
+	public $lifetime = '30';
 	public $session_handler = 'database';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '0';
+	public $force_ssl = '0';
+	public $feed_email = 'author';
+	public $cookie_domain = '';
+	public $cookie_path = '';
 }

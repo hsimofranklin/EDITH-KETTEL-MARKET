@@ -131,9 +131,9 @@ footer {
 
 
 
-/*changes by us */
+/*--------------------------------------------------------custom css----------------------------------------------------*/
 .navbar{
-   background-color: midnightblue;
+   background-color: rgba(2, 3, 65, 1);
 }
 
 .navbar-inverse .navbar-brand {
@@ -146,26 +146,38 @@ footer {
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: green;;
-  background-color: transparent;
+  color: rgba(2, 192, 166, 0.3);
 }
 
 .product h3{
-   color: midnightblue;
+   color: #020341;
    font-size: 12pt;
    font-weight: bold;
 }
 
 .product a{
-   color: midnightblue;
+   color: rgba(2, 3, 65, 1);
 }
 
 .product:hover{
-   background-color: lightcyan;
+   background-color: rgba(2, 192, 166, 0.3);
+   opacity: 30%;
 }
 
 .section-colored{
-   background-color: midnightblue;
+   background-color: rgba(2, 3, 65, 1);
+}
+
+.section-colored1{
+   background-color: rgba(2, 192, 166, 0.3);
+   height: 200px;
+}
+
+.img{
+display: block;
+}
+.section-colored1 .img{
+margin-top: -20px;
 }
 
 .section-colored h2{
@@ -177,6 +189,52 @@ footer {
 }
 
 .kataloge h1{
-   color: midnightblue;
+   color: rgba(2, 3, 65, 1);
    font-weight: normal;	
 }
+
+
+
+/*-------------------------------- New custom css ---------------------------------------*/
+.contacts{
+margin-top:10%;
+font-weight: bold;
+font-size: 18pt;
+color: #020341;
+opacity: 100%;
+}
+
+.img-circle{
+border: 3px solid rgba(2, 3, 65, 1);
+}
+
+.mobile-footer{
+background-color: rgba(2, 192, 166, 0.3);
+margin-bottom: 10px;
+border-radius: 10px;
+}
+
+.mobile-footer p{
+font-weight: bold;
+font-size: 18pt;
+padding: 10px 0 10px 0;
+color:#FFF;
+}
+
+.mobile-footer a{
+text-decoration: none;
+margin: auto;
+}
+
+#foot{
+margin-top:-70px;
+}
+
+.product-list{
+display: block;
+margin-bottom: 30px;
+}
+
+
+
+

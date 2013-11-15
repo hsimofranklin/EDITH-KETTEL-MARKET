@@ -90,42 +90,14 @@ unset($doc->_scripts[$this->baseurl.'/media/system/js/caption.js']);
       </div><!-- /.container -->
     </nav>
     
-    <div id="myCarousel" class="carousel slide">
-      <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-          <li class="" data-target="#myCarousel" data-slide-to="1"></li>
-          <li class="active" data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item">
-            <div class="fill"><img src="<?php echo $tpath.'/images/robin.jpg?b='.$bootstrap.'&amp;v=1'; ?>" alt="" class="img-responsive"></div>
-            <div class="carousel-caption">
-              <h1>Modern Business - A Bootstrap 3 Template</h1>
-            </div>
-          </div>
-          <div class="item">
-            <div class="fill"><img src="<?php echo $tpath.'/images/coeur.jpg?b='.$bootstrap.'&amp;v=1'; ?>" alt="" class="img-responsive"></div>
-            <div class="carousel-caption">
-              <h1>Ready to Style &amp; Add Content</h1>
-            </div>
-          </div>
-          <div class="item active">
-            <div class="fill"><img src="<?php echo $tpath.'/images/lune.jpg?b='.$bootstrap.'&amp;v=1'; ?>" alt="" class="img-responsive"></div>
-            <div class="carousel-caption">
-              <h1>Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a></h1>
-            </div>
-          </div>
-        </div>
-                <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="icon-next"></span>
-        </a>
+    <div>
+    
+      <?php if ($this->countModules('header-bottom')): ?>
+            <div id="slideshow">
+               <jdoc:include type="modules" name="header-bottom" style="none" />
+            </div>    
+      <?php endif; ?>
+      
     </div>
         
         
@@ -168,54 +140,134 @@ unset($doc->_scripts[$this->baseurl.'/media/system/js/caption.js']);
 
       </div><!-- /.container -->
 
-    </div><!-- /.section-colored -->
+    </div><br/><br/><br/><!-- /.section-colored -->
+    <br><br><br>
+ 
+ <!-- Desktop contacts -->  
+ <?php if ($this->countModules('content-bottom')): ?>   
+  <div class="section-colored1 visible-lg visible-md hidden-xs hidden-sm">  
+    <jdoc:include type="modules" name="content-bottom" style="none" />
+  </div>
+<?php endif; ?>
+
+     
+  
+   <!-- <div class="section-colored1">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-md-4 col-lg-4">
+           <img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>">
+          </div>
+          <div class="col-xs-4 col-md-4 col-lg-3 col-lg-offset-1">
+              <address>
+		         <p class="contacts">Wir beraten</p><br>
+		          <abbr title="Phone">P:</abbr> +49 (0) 911 / 83 45 22<br>
+		           oder per e-mail:<br>
+                 info@edithkettel.de
+	           </address>
+          </div>
+          <div class="col-xs-4 col-md-4 col-lg-4">
+           <img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>">
+          </div>
+        </div>
+      </div>
+    </div> -->
     
     <div class="section">
-
       <div class="container">
-
         <div class="row kataloge">    
           <div class="col-lg-12 text-center">
             <h1>Kataloge</h1>
             <br>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item.html"><img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
+          <div class="container">
+          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
+            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item.html"><img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
+          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
+            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item.html"><img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
+          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
+            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item.html"><img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
+          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
+            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item.html"><img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item.html"><img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
+          <div class="container">
+          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
+            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
+            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
+          </div>
+           <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
+            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
+            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
+          </div>
           </div>
         </div><!-- /.row -->
 
       </div><!-- /.container -->
 
     </div><!-- /.section -->
+  
+  <!-- Mobiles and Tablets contacts -->  
+    <?php if ($this->countModules('content-bottom')): ?>   
+     <div class="hidden-lg hidden-md visible-xs visible-sm">  
+     <jdoc:include type="modules" name="content-bottom" style="none" />
+     </div>
+    <?php endif; ?>
+ 
+ 
+<!-- Mobile Footer -->
+    <div class="section visible-xs visible-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-10 col-sm-10 mobile-footer">
+               <a href="mailto:info@edithkettel.de"><p class="text-center">Anrufen</p></a>
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-10 col-sm-10 mobile-footer">
+               <a href="mailto:info@edithkettel.de"><p class="text-center">Email</p></a>
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-10 col-sm-10 mobile-footer">
+               <a href="mailto:info@edithkettel.de"><p class="text-center">Karte</p></a>
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>   
+      </div><!-- /.container -->
+    </div><!-- /.section -->
+  
+ <hr>  
     
-   <div class="container">
-
-      <hr>
-
+   <div class="container visible-md visible-lg" id="foot">
       <footer>
         <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright © Company 2013</p>
+          <div class="col-md-12 col-lg-12">
+            <p>
+             <?php if ($this->countModules('footer')): ?>
+               <jdoc:include type="module" name="footer" title="footer-kettel" style="none" />
+             <?php endif; ?>
+             <?php if ($this->countModules('footer')): ?>
+               <jdoc:include type="modules" name="footer" title="copyright-kettel" style="none" />
+             <?php endif; ?>  
+            </p>
           </div>
         </div>
       </footer>
+  </div><!-- /.container -->
 
-    </div><!-- /.container -->
   <jdoc:include type="modules" name="debug" />
 </body>
 
