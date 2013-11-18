@@ -149,6 +149,13 @@ footer {
   color: rgba(2, 192, 166, 0.3);
 }
 
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+background-color: rgba(2, 3, 65, 1);
+color: rgba(2, 192, 166, 0.3);
+}
+
 .product h3{
    color: #020341;
    font-size: 12pt;
@@ -161,7 +168,6 @@ footer {
 
 .product:hover{
    background-color: rgba(2, 192, 166, 0.3);
-   opacity: 30%;
 }
 
 .section-colored{

@@ -47,7 +47,11 @@
 	<positions><!-- definir les positions de vos modules ici -->
 		<position>debug</position>
                 <position>header-top</position>
+                <position>menu</position>
                 <position>header-bottom</position>
+                <position>main-content</position>
+                <position>products</position>
+                <position>kataloge</position>
                 <position>sidebar-left</position>
                 <position>sidebar-right</position>
                 <position>content-top</position>

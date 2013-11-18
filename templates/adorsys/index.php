@@ -69,150 +69,73 @@ unset($doc->_scripts[$this->baseurl.'/media/system/js/caption.js']);
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="about.html">aktuelle Favoriten</a></li>
-            <li><a href="services.html">Philosophie</a></li>
-            <li><a href="contact.php">Kontakt</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Katalogue <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="portfolio-1-col.html">1 Column Portfolio</a></li>
-                <li><a href="portfolio-2-col.html">2 Column Portfolio</a></li>
-                <li><a href="portfolio-3-col.html">3 Column Portfolio</a></li>
-                <li><a href="portfolio-4-col.html">4 Column Portfolio</a></li>
-                <li><a href="portfolio-item.html">Single Portfolio Item</a></li>
-              </ul>
-            </li>
-            <li><a href="about.html">Impressum</a></li>
-            <li><a href="about.html">AGB</a></li>
-          </ul>
+                       
+          <?php if ($this->countModules('menu')): ?>   
+               <jdoc:include type="modules" name="menu" style="none" />
+          <?php endif; ?>       
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav>
     
+
+ 
+ <!-- Header Modules -->   
     <div>
-    
       <?php if ($this->countModules('header-bottom')): ?>
             <div id="slideshow">
                <jdoc:include type="modules" name="header-bottom" style="none" />
             </div>    
-      <?php endif; ?>
+      <?php endif; ?>  
+    </div><br>
+        
       
-    </div>
-        
-        
+<?php if ($this->countModules('products')): ?>        
     <div class="section">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4 col-md-4 product">
-            <h3> Produkt des Monats</h3>
-            <p>Irendige Quartzarmbanduhr für Herren und Damen. Metallgehäuse mit Edelstahlboden und 3 atm waterresistant Farbiges PU-Lederband. Japanisches Quartzwerk Citizen Miyota </p>
-            <a href="">> weiter Informationen anfordern  </a>
-          </div>
-          <div class="col-lg-4 col-md-4 product">
-            <h3> Produkt des Monats</h3>
-            <p>Irendige Quartzarmbanduhr für Herren und Damen. Metallgehäuse mit Edelstahlboden und 3 atm waterresistant Farbiges PU-Lederband. Japanisches Quartzwerk Citizen Miyota </p>
-            <a href="">> weiter Informationen anfordern  </a>
-          </div>
-          <div class="col-lg-4 col-md-4 product">
-            <h3> Produkt des Monats</h3>
-            <p>Irendige Quartzarmbanduhr für Herren und Damen. Metallgehäuse mit Edelstahlboden und 3 atm waterresistant Farbiges PU-Lederband. Japanisches Quartzwerk Citizen Miyota </p>
-            <a href="">> weiter Informationen anfordern  </a>
-          </div>
-        </div><!-- /.row -->
-
+      <div class="container">  
+           <jdoc:include type="modules" name="products" style="none" />       
       </div><!-- /.container -->
-
     </div><!-- /.section -->
-    
-    <div class="section-colored text-center">
+<?php endif; ?>  
+ 
 
+   
+    <div class="section">
       <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>Solorum eum ipicat unt aut occuptatem</h2>
-            <p>as qui vel il magnam, natem dellore rnatusam nonserum quia quiat as qui vel il magnam, natem dellore rnatusam nonserum</p>
-          </div>
-        </div><!-- /.row -->
-
+       <div class="row">
+        <jdoc:include type="component"  />
+       </div>  
       </div><!-- /.container -->
-
+    </div>
+  
+ 
+ <?php if ($this->countModules('main-content')): ?>   
+    <div class="section-colored text-center">
+      <div class="container">
+        <jdoc:include type="modules" name="main-content" style="none" />
+      </div><!-- /.container -->
     </div><br/><br/><br/><!-- /.section-colored -->
-    <br><br><br>
+<?php endif; ?>    
+
  
  <!-- Desktop contacts -->  
- <?php if ($this->countModules('content-bottom')): ?>   
-  <div class="section-colored1 visible-lg visible-md hidden-xs hidden-sm">  
+ <?php if ($this->countModules('content-bottom')): ?>
+ <br><br>   
+  <div class="section-colored1 visible-lg visible-md">  
     <jdoc:include type="modules" name="content-bottom" style="none" />
   </div>
 <?php endif; ?>
 
-     
-  
-   <!-- <div class="section-colored1">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-4 col-md-4 col-lg-4">
-           <img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>">
-          </div>
-          <div class="col-xs-4 col-md-4 col-lg-3 col-lg-offset-1">
-              <address>
-		         <p class="contacts">Wir beraten</p><br>
-		          <abbr title="Phone">P:</abbr> +49 (0) 911 / 83 45 22<br>
-		           oder per e-mail:<br>
-                 info@edithkettel.de
-	           </address>
-          </div>
-          <div class="col-xs-4 col-md-4 col-lg-4">
-           <img class="img-responsive img-circle" src="<?php echo $tpath.'/images/smallville.jpg?b='.$bootstrap.'&amp;v=1'; ?>">
-          </div>
-        </div>
-      </div>
-    </div> -->
-    
+
+<!-- Kataloge module -->
+<?php if ($this->countModules('kataloge')): ?>    
     <div class="section">
       <div class="container">
-        <div class="row kataloge">    
-          <div class="col-lg-12 text-center">
-            <h1>Kataloge</h1>
-            <br>
-          </div>
-          <div class="container">
-          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
-            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
-            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
-            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
-            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
-          </div>
-          </div>
-          <div class="container">
-          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
-            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
-            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
-          </div>
-           <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
-            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
-          </div>
-          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-6 product-list">
-            <a href="#"><img class="img-responsive img-circle" width="150" height="150" src="<?php echo $tpath.'/images/product.jpg?b='.$bootstrap.'&amp;v=1'; ?>"></a>
-          </div>
-          </div>
-        </div><!-- /.row -->
-
+        <jdoc:include type="modules" name="kataloge" style="none" />
       </div><!-- /.container -->
-
     </div><!-- /.section -->
+<?php endif; ?>    
+
+
   
   <!-- Mobiles and Tablets contacts -->  
     <?php if ($this->countModules('content-bottom')): ?>   
